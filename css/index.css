@@ -1,0 +1,192 @@
+/*初始化*/
+*{ margin:0; padding:0; text-decoration:none; list-style:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; font-family:'youyuan'; font-weight:normal }
+html{ font-size:62.5%; width:100%; overflow:hidden }
+body{ font-size:1.4rem; overflow:hidden }
+a{ color:#fff }
+h1{ margin:30px 0 50px; font-size:3rem }
+h2{ margin:20px 0 }
+h3{ margin:20px 0 }
+input, textarea, button{ outline:none; padding:12px; font-size:1.4rem; border:1px solid #e5e5e5; background:none }
+.clear_both{ clear:both }
+section{ width:100% }
+@font-face{
+font-family:'youyuan';
+src:url("../fonts/youyuan.TTF")
+}
+body{
+padding:0;
+margin:0;
+}
+ul{
+padding:0;
+margin:0;
+list-style:none;
+}
+a{
+text-decoration:none;
+}
+/*模块化*/
+.warp{
+}
+/*第一屏*/
+#page1{
+background:url("../images/bg1.png") no-repeat center center;
+}
+#page1 nav{
+width:100%;
+position:relative;
+font-size:16px;
+text-align:center;
+}
+#page1 .nav_warp{
+width:80%;
+
+margin:0 auto;
+}
+#page1 .nav_bar{
+width:50%;
+margin-top:30px;
+float:right;
+}
+
+#page1 .nav_bar ul li{
+width:25%;
+height:50px;
+line-height:50px;
+float:left;
+background-color:transparent;
+transition:background-color 1s;
+}
+#page1 .nav_bar ul li:hover {
+background-color:rgba(0,0,0,0.5);
+}
+#page1 .container {
+display:none;
+width:50%;
+height:60%;
+position:absolute;
+top:50%;
+left:50%;
+text-align:center;
+overflow:hidden;
+transform:translate(-50%,-50%);
+}
+#page1 .portrait {
+margin:0 auto;
+}
+#page1 .portrait h1 {
+background:url("../images/123.jpg") no-repeat center center;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size:50px;
+font-weight:bolder;
+}
+#page1 .portrait p {
+display:block;
+font-size:24px;
+font-weight:normal;
+color:#ffffff;
+height:50px;
+line-height:50px;
+}
+#page1 .con_text h3 {
+display:block;
+height:30px;
+line-height:30px;
+font-size:18px;
+color:#ffffff;
+}
+/*第二屏*/
+#page2 {
+background:url(../images/bg2.jpg) center center no-repeat;
+}
+#page2 .container {
+width:80%;
+margin: 0 auto;
+padding:1rem 0;
+text-align:center;
+}
+#page2 .con_tit h1 {
+color:white;
+margin: 20px auto;
+height:30px;
+line-height:30px;
+}
+#page2 .con_tit .line {
+width:100%;
+height:1px;
+border-top:1px dashed #cccccc;
+}
+#page2 .con_tit p {
+color:white;
+font-size:18px;
+margin:20px auto;
+}
+#page2 .mymsg {
+width:100%;
+padding:0 20px;
+}
+#page2 .mymsg table {
+width:80%;
+margin: 40px auto;
+}
+#page2 .mymsg table tr td {
+padding-left:20px;
+font-size:1.8rem;
+padding:15px 15px 15px 30px;
+text-align:left;
+color:white;
+height:30px;
+line-height:30px;
+}
+/*第三屏*/
+#page3 {
+background:url(../images/bg4.jpg) center center no-repeat;
+}
+#page3 .container {
+width:80%;
+margin: 0 auto;
+padding:1rem 0;
+text-align:center;
+}
+#page3 .con_tit h1 {
+color:white;
+margin: 20px auto;
+height:30px;
+line-height:30px;
+}
+#page3 .con_tit .line {
+width:100%;
+height:1px;
+border-top:1px dashed #cccccc;
+}
+#page3 .con_tit p {
+color:white;
+font-size:20px;
+margin:20px auto;
+}
+#page3 .myskill {
+width:100%;
+padding:0 20px;
+}
+#page3 .myskill .canvas {
+width:50%;
+height:400px;
+float:left;
+}
+#page3 .myskill .skills{
+width:50%;
+padding:10px;
+float:right;
+}
+#page3 .myskill .skills p {
+color:white;
+font-size:18px;
+text-align:left;
+/*height:30px;*/
+line-height: 30px;
+}
+/*第四屏*/
+#page4 {
+background:url(../images/bg5.jpg) center center no-repeat;
+}
