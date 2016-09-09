@@ -83,6 +83,36 @@ background:url("../images/123.jpg") no-repeat center center;
 font-size:50px;
 font-weight:bolder;
 }
+/*文字抖动*/
+#page1 .portrait .hello{
+/*margin: 100px auto;*/
+/*width: 100px;*/
+text-align: center;
+/*height: 40px;*/
+/*line-height: 40px;*/
+/*border: 1px solid #CCC;*/
+/*border-radius: 2px;*/
+}
+#page1 .portrait .hello:hover {
+animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+transform: translate3d(0, 0, 0);
+backface-visibility: hidden;
+perspective: 1000px;
+}
+@keyframes shake {
+10%, 90% {
+transform: translate3d(-1px, 0, 0);
+}
+20%, 80% {
+transform: translate3d(2px, 0, 0);
+}
+30%, 50%, 70% {
+transform: translate3d(-4px, 0, 0);
+}
+40%, 60% {
+transform: translate3d(4px, 0, 0);
+}
+}
 #page1 .portrait p {
 display:block;
 font-size:24px;
@@ -126,20 +156,24 @@ margin:20px auto;
 }
 #page2 .mymsg {
 width:100%;
-padding:0 20px;
+padding:20px;
 }
-#page2 .mymsg table {
-width:80%;
-margin: 40px auto;
+#page2 .mymsg .l-msg {
+width:50%;
+float:left;
+display:none;
 }
-#page2 .mymsg table tr td {
-padding-left:20px;
-font-size:1.8rem;
-padding:15px 15px 15px 30px;
-text-align:left;
+#page2 .mymsg .r-msg {
+width:50%;
+float:right;
+display:none;
+}
+#page2 .mymsg ul li {
 color:white;
-height:30px;
-line-height:30px;
+width:100%;
+font-size:20px;
+height:60px;
+line-height:60px;
 }
 /*第三屏*/
 #page3 {
@@ -176,10 +210,6 @@ width:50%;
 height:450px;
 float:left;
 }
-/*#page3 .myskill .wbc canvas {*/
-/*float:left;*/
-/*margin:25px 10px;*/
-/*}*/
 /*技能条*/
 .skillbar {
 position:relative;
@@ -258,6 +288,7 @@ color:rgba(0, 0, 0, 0.4);
 width:50%;
 padding:10px;
 float:right;
+/*display:none;*/
 }
 #page3 .myskill .skills p {
 color:white;
@@ -305,29 +336,33 @@ position:relative;
 }
 #page4 .contact i {
 margin-bottom:20px;
+height:42px;
 display:block;
 }
 #page4 .contact span {
 font-size:18px;
+display:block;
+height:42px;
+/*display:none;;*/
 }
 #page4 .contact .mail {
 color:white;
 display:inline-block;
 position:absolute;
 top: 0;
-left:15%;
+left:180px;
 }
 #page4 .contact .phone {
 color:white;
 display:inline-block;
 position:absolute;
 top: 0;
-left:45%;
+left:500px;
 }
 #page4 .contact .qq {
 color:white;
 display:inline-block;
 position:absolute;
 top: 0;
-left:75%;
+left:780px;
 }
