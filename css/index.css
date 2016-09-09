@@ -30,7 +30,8 @@ text-decoration:none;
 }
 /*第一屏*/
 #page1{
-background:url("../images/bg1.png") no-repeat center center;
+background:url("../images/bg01.jpg") no-repeat center center;
+background-size:100%;
 }
 #page1 nav{
 width:100%;
@@ -58,7 +59,8 @@ background-color:transparent;
 transition:background-color 1s;
 }
 #page1 .nav_bar ul li:hover {
-background-color:rgba(0,0,0,0.5);
+background-color:rgba(105,105,105,0.3);
+border-radius:5px;
 }
 #page1 .container {
 display:none;
@@ -169,11 +171,89 @@ margin:20px auto;
 width:100%;
 padding:0 20px;
 }
-#page3 .myskill .canvas {
+#page3 .myskill .wbc {
 width:50%;
-height:400px;
+height:450px;
 float:left;
 }
+/*#page3 .myskill .wbc canvas {*/
+/*float:left;*/
+/*margin:25px 10px;*/
+/*}*/
+/*技能条*/
+.skillbar {
+position:relative;
+display:block;
+margin-bottom:15px;
+width:100%;
+background:#eee;
+height:45px;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+-webkit-transition:0.4s linear;
+-moz-transition:0.4s linear;
+-ms-transition:0.4s linear;
+-o-transition:0.4s linear;
+transition:0.4s linear;
+-webkit-transition-property:width, background-color;
+-moz-transition-property:width, background-color;
+-ms-transition-property:width, background-color;
+-o-transition-property:width, background-color;
+transition-property:width, background-color;
+}
+
+.skillbar-title {
+position:absolute;
+top:0;
+left:0;
+width:110px;
+font-weight:bold;
+font-size:16px;
+color:#ffffff;
+background:#6adcfa;
+-webkit-border-top-left-radius:3px;
+-webkit-border-bottom-left-radius:4px;
+-moz-border-radius-topleft:3px;
+-moz-border-radius-bottomleft:3px;
+border-top-left-radius:3px;
+border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+display:block;
+background:rgba(0, 0, 0, 0.1);
+padding:0 20px;
+height:45px;
+line-height:45px;
+-webkit-border-top-left-radius:3px;
+-webkit-border-bottom-left-radius:3px;
+-moz-border-radius-topleft:3px;
+-moz-border-radius-bottomleft:3px;
+border-top-left-radius:3px;
+border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+height:45px;
+width:0px;
+background:#6adcfa;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+position:absolute;
+right:10px;
+top:0;
+font-size:16px;
+height:45px;
+line-height:45px;
+color:#ffffff;
+color:rgba(0, 0, 0, 0.4);
+}
+/*技能条结束*/
 #page3 .myskill .skills{
 width:50%;
 padding:10px;
@@ -189,4 +269,65 @@ line-height: 30px;
 /*第四屏*/
 #page4 {
 background:url(../images/bg5.jpg) center center no-repeat;
+}
+#page4 .container {
+width:80%;
+margin: 0 auto;
+padding:1rem 0;
+text-align:center;
+}
+#page4 .con_tit h1 {
+color:white;
+margin: 20px auto;
+height:30px;
+line-height:30px;
+}
+#page4 .con_tit .line {
+width:100%;
+height:1px;
+border-top:1px dashed #cccccc;
+}
+#page4 .con_tit p {
+color:white;
+font-size:20px;
+margin:20px auto;
+}
+#page4 .thx p {
+color:white;
+height:60px;
+line-height:60px;
+font-size:18px;
+}
+#page4 .contact {
+width:100%;
+margin-top:20px;
+position:relative;
+}
+#page4 .contact i {
+margin-bottom:20px;
+display:block;
+}
+#page4 .contact span {
+font-size:18px;
+}
+#page4 .contact .mail {
+color:white;
+display:inline-block;
+position:absolute;
+top: 0;
+left:15%;
+}
+#page4 .contact .phone {
+color:white;
+display:inline-block;
+position:absolute;
+top: 0;
+left:45%;
+}
+#page4 .contact .qq {
+color:white;
+display:inline-block;
+position:absolute;
+top: 0;
+left:75%;
 }

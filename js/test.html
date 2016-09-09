@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas width="400" height="400" id="aaa"></canvas>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="waterbubble.js"></script>
+<script>
+    $('#aaa').waterbubble();
+    $('#aaa').waterbubble({
+        radius: 180,
+        lineWidth: 5,
+        data: 0.85,
+        waterColor: 'rgba(255,110,180, 1)',
+        textColor: 'rgba(33,33, 33, 0.8)',
+        txt: 'HTML5',
+        font: 'bold 30px "youyuan"',
+        wave: true,
+        animation: true
+    });
+</script>
+</body>
+</html>
