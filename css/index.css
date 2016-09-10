@@ -27,11 +27,13 @@ text-decoration:none;
 }
 /*模块化*/
 .warp{
+min-width:1200px;
+margin:0 auto;
 }
 /*第一屏*/
 #page1{
 background:url("../images/bg01.jpg") no-repeat center center;
-background-size:100%;
+background-size:100% 100%;
 }
 #page1 nav{
 width:100%;
@@ -131,6 +133,7 @@ color:#ffffff;
 /*第二屏*/
 #page2 {
 background:url(../images/bg2.jpg) center center no-repeat;
+background-size:100% 100%;
 }
 #page2 .container {
 width:80%;
@@ -178,6 +181,7 @@ line-height:60px;
 /*第三屏*/
 #page3 {
 background:url(../images/bg4.jpg) center center no-repeat;
+background-size:100% 100%;
 }
 #page3 .container {
 width:80%;
@@ -300,6 +304,7 @@ line-height: 30px;
 /*第四屏*/
 #page4 {
 background:url(../images/bg5.jpg) center center no-repeat;
+background-size:100% 100%;
 }
 #page4 .container {
 width:80%;

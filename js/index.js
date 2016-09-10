@@ -2,6 +2,7 @@
  * Created by Zong on 09/06 0006.
  */
 $(function(){
+    //fullpage插件配置参数
     $('.wrap').fullpage({
         'navigation': true,
         'navigationColor':'white',
@@ -10,9 +11,11 @@ $(function(){
         'anchors': ['page01', 'page02', 'page03', 'page04'],
         'afterLoad' : function(anchorLink,index){
             if (index == 1) {
+                //第一屏执行特效
                 $(".container").fadeIn(3500)
             }
             if (index == 2) {
+                //第二屏执行特效
                 $(".l-msg").show(1000);
                 $(".r-msg").show(1000);
                 $(".mymsg").find("li").each(function(i){
@@ -25,11 +28,13 @@ $(function(){
                 })
             }
             if (index == 3) {
+                //第三屏技能条执行特效
                 $('.skillbar').each(function(){
                     $(this).find('.skillbar-bar').animate({
                         width : $(this).attr('data-percent')
                     }, 2000);
                 });
+                //第三屏文字特效
                 $(".skills").find("p").each(function(i){
                     $(this).mousemove(function(){
                         $(this).addClass("animated pulse")
@@ -40,6 +45,7 @@ $(function(){
                 })
             }
             if (index == 4) {
+                //第四屏联系方式特效
                 $(".mail").mousemove(function(){
                     $(".mail").addClass("animated rotateIn")
                 });
@@ -61,6 +67,4 @@ $(function(){
             }
         }
     });
-
-
 })
