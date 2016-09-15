@@ -45,6 +45,11 @@ $(function(){
                 })
             }
             if (index == 4) {
+                $(".thx").slideDown(1500, function(){
+                    $(".contact").animate({
+                        left:"0px"
+                    },1000);
+                });
                 //第四屏联系方式特效
                 $(".mail").mousemove(function(){
                     $(".mail").addClass("animated rotateIn")
