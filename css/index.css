@@ -25,6 +25,28 @@ list-style:none;
 a{
 text-decoration:none;
 }
+
+/*媒体查询*/
+@media screen and (max-width: 768px){
+#page1 #bs-example-navbar-collapse-1 {
+background-color:#cccccc;
+text-align:center;
+}
+#page1 .navbar #bs-example-navbar-collapse-1 .navbar-nav li {
+width:100%;
+}
+}
+@media screen and (max-width: 992px){
+#page3 .cont .myskill .skills {
+width:100%;
+text-align:center;
+clear:both;
+}
+#page2 .mymsg .l-msg {
+width:100%;
+}
+}
+
 /*模块化*/
 .warp{
 min-width:1200px;
@@ -35,39 +57,24 @@ margin:0 auto;
 background:url("../images/bg01.jpg") no-repeat center center;
 background-size:100% 100%;
 }
-#page1 nav{
+#page1 .navbar-default{
 width:100%;
+border:none;
 position:relative;
 font-size:16px;
 text-align:center;
-}
-#page1 .nav_warp{
-width:80%;
-
-margin:0 auto;
-}
-#page1 .nav_bar{
-width:50%;
-margin-top:30px;
-float:right;
-}
-
-#page1 .nav_bar ul li{
-width:25%;
-height:50px;
-line-height:50px;
-float:left;
+z-index:999;
 background-color:transparent;
-transition:background-color 1s;
 }
-#page1 .nav_bar ul li:hover {
-background-color:rgba(105,105,105,0.3);
-border-radius:5px;
+
+#page1 #bs-example-navbar-collapse-1 .navbar-nav li {
+width:100px;
 }
-#page1 .container {
+
+#page1 .cont {
 display:none;
 width:50%;
-height:60%;
+/*height:60%;*/
 position:absolute;
 top:50%;
 left:50%;
@@ -120,8 +127,10 @@ display:block;
 font-size:24px;
 font-weight:normal;
 color:#ffffff;
-height:50px;
-line-height:50px;
+height:100%px;
+}
+#page1 .con_text {
+height:100%;
 }
 #page1 .con_text h3 {
 display:block;
@@ -135,7 +144,7 @@ color:#ffffff;
 background:url(../images/bg2.jpg) center center no-repeat;
 background-size:100% 100%;
 }
-#page2 .container {
+#page2 .cont {
 width:80%;
 margin: 0 auto;
 padding:1rem 0;
@@ -161,12 +170,12 @@ margin:20px auto;
 width:100%;
 padding:20px;
 }
-#page2 .mymsg .l-msg {
+#page2 .l-msg {
 width:50%;
 float:left;
 display:none;
 }
-#page2 .mymsg .r-msg {
+#page2 .r-msg {
 width:50%;
 float:right;
 display:none;
@@ -183,7 +192,7 @@ line-height:60px;
 background:url(../images/bg4.jpg) center center no-repeat;
 background-size:100% 100%;
 }
-#page3 .container {
+#page3 .cont {
 width:80%;
 margin: 0 auto;
 padding:1rem 0;
@@ -192,8 +201,8 @@ text-align:center;
 #page3 .con_tit h1 {
 color:white;
 margin: 20px auto;
-height:30px;
-line-height:30px;
+height:30%;
+line-height:30%;
 }
 #page3 .con_tit .line {
 width:100%;
@@ -207,11 +216,10 @@ margin:20px auto;
 }
 #page3 .myskill {
 width:100%;
-padding:0 20px;
 }
 #page3 .myskill .wbc {
 width:50%;
-height:450px;
+/*height:450px;*/
 float:left;
 }
 /*技能条*/
@@ -221,7 +229,7 @@ display:block;
 margin-bottom:15px;
 width:100%;
 background:#eee;
-height:45px;
+height:50px;
 border-radius:3px;
 -moz-border-radius:3px;
 -webkit-border-radius:3px;
@@ -258,8 +266,8 @@ border-bottom-left-radius:3px;
 display:block;
 background:rgba(0, 0, 0, 0.1);
 padding:0 20px;
-height:45px;
-line-height:45px;
+height:50px;
+line-height:50px;
 -webkit-border-top-left-radius:3px;
 -webkit-border-bottom-left-radius:3px;
 -moz-border-radius-topleft:3px;
@@ -269,7 +277,7 @@ border-bottom-left-radius:3px;
 }
 
 .skillbar-bar {
-height:45px;
+height:50px;
 width:0px;
 background:#6adcfa;
 border-radius:3px;
@@ -282,8 +290,8 @@ position:absolute;
 right:10px;
 top:0;
 font-size:16px;
-height:45px;
-line-height:45px;
+height:50px;
+line-height:50px;
 color:#ffffff;
 color:rgba(0, 0, 0, 0.4);
 }
@@ -298,15 +306,15 @@ float:right;
 color:white;
 font-size:18px;
 text-align:left;
-/*height:30px;*/
-line-height: 30px;
+height:100%;
+/*line-height: 30px;*/
 }
 /*第四屏*/
 #page4 {
 background:url(../images/bg5.jpg) center center no-repeat;
 background-size:100% 100%;
 }
-#page4 .container {
+#page4 .cont {
 width:80%;
 margin: 0 auto;
 padding:1rem 0;

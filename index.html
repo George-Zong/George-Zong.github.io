@@ -1,10 +1,17 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="keywords" content="web前端工程师">
     <meta name="description" content="一个前端萌新的个人展示页面">
     <title leave="(,,• ₃ •,,)我在这里啦！">个人展示<(￣︶￣)↗[GO!]</title>
+    <link href="./lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./lib/respond/respond.min.js"></script>
+    <![endif]-->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
@@ -16,35 +23,41 @@
     <!--第一屏-->
     <section class="section" id="page1">
         <!--导航开始-->
-        <nav>
-            <div class="nav_warp">
-                <div class="nav_bar">
-                    <ul>
-                        <li>
-                            <a href="#page01">首 页</a>
-                        </li>
-                        <li>
-                            <a href="#page02">关于我</a>
-                        </li>
-                        <li>
-                            <a href="#page03">技 能</a>
-                        </li>
-                        <li>
-                            <a href="#page04">联系我</a>
-                        </li>
-                    </ul>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-            </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#page01">首页</a></li>
+                            <li><a href="#page02">关于我</a></li>
+                            <li><a href="#page03">技能</a></li>
+                            <li><a href="#page04">联系我</a></li>
+                        </ul>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </nav>
+
         <!--导航结束-->
         <!--container开始-->
-        <div class="container">
+        <div class="cont">
             <div class="portrait">
                 <h1 class="hello">Hello&nbsp;World</h1>
                 <p>种一棵树最好的时间是十年前，其次就是现在。</p>
                 <hr>
             </div>
-            <div class="con_text">
+            <div class="con_text hidden-md hidden-sm hidden-xs">
                 <h3>这是一个前端萌新的个人页面</h3>
                 <h3>没有多少高大上的特效</h3>
                 <h3>全是自己一行代码一行代码敲出来的</h3>
@@ -55,7 +68,7 @@
     </section>
     <!--第二屏-->
     <section class="section" id="page2">
-        <div class="container">
+        <div class="cont">
             <div class="con_tit">
                 <h1>关于我</h1>
                 <div class="line"></div>
@@ -70,7 +83,7 @@
                     <li>学历 | 本科</li>
                     <li>专业 | 计算机科学与技术</li>
                 </ul>
-                <ul class="r-msg">
+                <ul class="r-msg hidden-xs hidden-sm">
                     <li>手机 | 13593187320</li>
                     <li>邮箱 | zonggang120@126.com</li>
                     <li>QQ号 | 395785670</li>
@@ -83,7 +96,7 @@
     </section>
     <!--第三屏-->
     <section class="section" id="page3">
-        <div class="container">
+        <div class="cont">
             <div class="con_tit">
                 <h1>技能</h1>
                 <div class="line"></div>
@@ -92,7 +105,7 @@
             <!--技能部分开始-->
             <div class="myskill">
                 <!--技能条部分开始-->
-                <div class="wbc">
+                <div class="wbc hidden-xs hidden-sm">
                     <div class="skillbar clearfix " data-percent="80%">
                         <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
                         <div class="skillbar-bar" style="background: #e67e22;"></div>
@@ -156,7 +169,7 @@
     </section>
     <!--第四屏-->
     <section class="section" id="page4">
-        <div class="container">
+        <div class="cont">
             <div class="con_tit">
                 <h1>联系我</h1>
                 <div class="line"></div>
@@ -169,7 +182,7 @@
                 <p>如果对本人还满意，可随时带走上岗<(*￣▽￣*)/</p>
             </div>
             <!--联系方式开始-->
-            <div class="contact">
+            <div class="contact hidden-xs">
                 <div class="mail">
                     <i class="fa fa-at fa-3x"></i>
                     <span>zonggang120@126.com</span>
@@ -188,6 +201,7 @@
     </section>
 </div>
 <script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="./js/jquery.fullpage.min.js"></script>
 <script src="./js/index.js"></script>
 </body>

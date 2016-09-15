@@ -12,7 +12,7 @@ $(function(){
         'afterLoad' : function(anchorLink,index){
             if (index == 1) {
                 //第一屏执行特效
-                $(".container").fadeIn(3500)
+                $(".cont").fadeIn(3500)
             }
             if (index == 2) {
                 //第二屏执行特效
